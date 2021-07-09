@@ -9,16 +9,9 @@ import Layout from "../../components/Layout";
 	- Change style from flex to grid layout
 **/
 
-import React from 'react'
-
-export default function our-faculty-and-staff() {
-	return (
-		<div>
-			Faculty and Staff
-		</div>
-	)
+export default function ourFacultyAndStaff() {
+	return <div>Faculty and Staff</div>;
 }
-
 
 // const facultyAndStaff = ({ data }) => {
 // 	const staffData = data.allContentfulSchoolStaff.nodes;
