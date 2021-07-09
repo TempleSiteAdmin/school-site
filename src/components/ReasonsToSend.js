@@ -9,37 +9,43 @@ import { StaticQuery, graphql } from "gatsby";
 	--------------------------------
 ***/
 
-const ReasonsToSend = () => (
-	<StaticQuery
-		query={graphql`
-			{
-				allContentfulReasonsToSend(sort: { fields: reasonNumber, order: ASC }) {
-					nodes {
-						reasonNumber
-						reasonTitle
-						reasonBody {
-							reasonBody
-						}
-					}
-				}
-			}
-		`}
-		render={(data) => {
-			const reasons = data.allContentfulReasonsToSend.nodes;
-			return (
-				<div className="reasons-container">
-					{reasons.map((reason) => (
-						<div>
-							<h3 className="reasons-header">
-								{reason.reasonNumber}. {reason.reasonTitle}
-							</h3>
-							<div className="reaons-body">{reason.reasonBody.reasonBody}</div>
-						</div>
-					))}
-				</div>
-			);
-		}}
-	></StaticQuery>
-);
+// const ReasonsToSend = () => (
+// 	<StaticQuery
+// 		query={graphql`
+// 			{
+// 				allContentfulReasonsToSend(sort: { fields: reasonNumber, order: ASC }) {
+// 					nodes {
+// 						reasonNumber
+// 						reasonTitle
+// 						reasonBody {
+// 							reasonBody
+// 						}
+// 					}
+// 				}
+// 			}
+// 		`}
+// 		render={(data) => {
+// 			const reasons = data.allContentfulReasonsToSend.nodes;
+// 			return (
+// 				<div className="reasons-container">
+// 					{reasons.map((reason) => (
+// 						<div>
+// 							<h3 className="reasons-header">
+// 								{reason.reasonNumber}. {reason.reasonTitle}
+// 							</h3>
+// 							<div className="reaons-body">{reason.reasonBody.reasonBody}</div>
+// 						</div>
+// 					))}
+// 				</div>
+// 			);
+// 		}}
+// 	></StaticQuery>
+// );
 
-export default ReasonsToSend;
+// export default ReasonsToSend;
+
+import React from "react";
+
+export default function ReasonsToSend() {
+	return <div>Reasons to Send</div>;
+}

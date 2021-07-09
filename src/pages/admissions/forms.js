@@ -7,7 +7,7 @@ import Layout from "../../components/Layout";
   Data pulled from Contentful
 ***/
 
-export default function WhyTBS() {
+export default function Forms() {
 	return (
 		<Layout>
 			<Helmet>
