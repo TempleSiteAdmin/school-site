@@ -44,8 +44,6 @@ import { StaticQuery, graphql } from "gatsby";
 
 // export default ReasonsToSend;
 
-import React from "react";
-
 export default function ReasonsToSend() {
 	return <div>Reasons to Send</div>;
 }

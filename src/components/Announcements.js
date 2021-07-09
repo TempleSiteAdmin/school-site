@@ -5,8 +5,6 @@ import { StaticQuery, graphql } from "gatsby";
 	Announcements component to display all announcements pulled from Contentful
 ***/
 
-import React from "react";
-
 export default function Announcements() {
 	return <div>Announcements</div>;
 }
